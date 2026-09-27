@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap');
+nav{
+    height: 80px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding:0 20px;
+    background-color:rgba(4, 15, 24, 0.95);
+    border-bottom: 1px solid rgba(241, 213, 138, 0.25);
+    position:relative;
+    z-index: 10;
+}
+
+.logo img{
+    width:250px;
+    height: auto;
+}   
+
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    color:#f1d58a;
+    text-decoration:none;
+    font-size:15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: 0.3s;
+}
+
+.nav-links a:hover{
+    color: white;
+}
+
+.hero{
+    min-height: 80vh;
+    background-image: url("../images/hogwarts-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position:relative
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    pointer-events: none;
+} 
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    max-width: 700px;
+}
+.hero-content h1 {
+    color: #f1d58a;
+    font-family: "Cinzel", serif;
+    font-size: 55px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-shadow: 0 3px 12px black;
+}
+.hero-content p {
+    color: #f5f1e6;
+    font-family: "Cinzel", serif;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.hero-button{
+    display:inline-block;
+    padding:14px 35px;
+    color:#f1d58a;
+    border :1px solid #f1d58a;
+    border-radius:30px;
+    text-decoration:none;
+    font-size:17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(4, 15, 24, 0.65);
+    transition: 0.3s;
+}
+.hero-button:hover{
+    background-color: #f1d58a;
+    color:#06131c;
+    box-shadow: 0 0 20px rgba(241, 213, 138, 0.5);
+}
+
+.welcome{
+    background-color: #06131c;
+    padding:60px 20px;
+    text-align: center;
+}
+.welcome h2{
+    color: #f1d58a;
+    font-family:"Cinzel", serif;
+    font-size:32px;
+    margin-bottom: 20px;
+}
+.welcome p{
+    color:#f5f1e6 ;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-size: 16px;
+    line-height: 1.6;
+    white-space: pre-line;
+}
+.featured-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+.card {
+    width: 280px;
+    background-color:#01192b ;
+    border: 1px solid rgba(241, 213, 138, 0.25);
+    border-radius: 12px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    display: block;
+}
+.card h3 {
+    color: #f1d58a;
+    font-family: "Cinzel", serif;
+    font-size: 22px;
+    margin: 20px 0 10px;
+}
+
+.card p {
+    color: #f5f1e6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 15px;
+}
+.card a {
+    color: #f1d58a;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+footer {
+    background-color: #0b202d;
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #040f18;
+    color: #f5f1e6;
+    text-align: center;
+    padding: 25px 20px;
+}
+footer p {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+.quote {
+    background-image: url("../images/quote-bg.png");
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+}
+.quote p {
+    position: relative;
+    z-index: 1;
+    color: #f7c231;
+    font-family: "Cinzel", serif;
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 0;
+}
+.page-hero{
+    min-height:45vh;
+    background-image:url("../images/hogwarts-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.page-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+}
+.page-hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+.page-hero-content h1 {
+  color:#f1d58a;
+  font-family:"Cinzel", serif;
+  font-size: 55px;
+  letter-spacing:2px;
+  margin-bottom: 15px;
+  text-shadow: 0 3px 12px black;
+}
+.page-hero-content p{
+    color:#f5f1e6;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:20px;
+    margin:0;
+}
+.about-hogwarts{
+    background-color:#06131c;
+    padding:60px 20px;
+    text-align: center;
+}
+.about-hogwarts h2{
+    color:#f1d58a;
+    font-family:"Cinzel", serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.about-hogwarts p{
+    max-width: 750px;
+    margin: 0 auto;
+    color:#f5f1e6;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:16px;
+    line-height:1.6;
+}
+.houses{
+    background-color:#06131c;
+    padding: 60px 20px;
+    text-align: center;
+}
+.houses h2{
+    color:#f1d58a;
+    font-family:"Cinzel", serif;
+    font-size:32px;
+    margin-bottom: 30px;
+}
+.houses-cards{
+     display:flex;
+     flex-direction:row;
+     justify-content:center;
+     gap:20px;
+     flex-wrap:wrap;
+}
+.houses-cards .card{
+    width: 220px;
+    padding-bottom: 15px;
+}
+.houses-cards .card img {
+    width: 75%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.houses-cards .card h3{
+    font-size: 18px;
+    line-height: 1.4;
+}
+.houses-cards .card p{
+    font-size: 13px;
+    line-height: 1.4;
+    padding:0 10px;
+}
+.life-at-hogwarts{
+    background-color:#06131c;
+    padding:60px 20px;
+    text-align: center;
+}
+.life-at-hogwarts h2{
+    color:#f1d58a;
+    font-family:"Cinzel", serif;
+    font-size:32px;
+    margin-bottom:30px;
+}
+.life-cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+.life-cards .card img{
+    width:100%;
+    height:130px;
+    object-fit:cover;
+    display:block;
+}
+.life-cards .card h3 {
+    color: #f1d58a;
+    font-family: "Cinzel", serif;
+    font-size: 16px;
+    margin: 12px 0 6px;
+}
+.life-cards .card p {
+    color: #f5f1e6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13px;
+    line-height: 1.4;
+    padding: 0 10px;
+}
+.magical-places, .magical-creatures{
+    background-color:#06131c;
+    padding:60px 20px;
+    text-align:center;
+}
+.magical-places h2, .magical-creatures h2{
+    color:#f1d58a;
+    font-family:"Cinzel", serif;
+    font-size:32px;
+    margin-bottom:30px;
+}
+.world-cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+.world-cards .card{
+    width:280px;
+    background-color:#01192b;
+    padding-bottom:15px;
+}
+.world-cards .card img{
+    width:100%;
+    height:180px;
+    object-fit: cover;
+    display: block;
+}
+.world-cards .card h3{
+    color:#f1d58a;
+    font-family:"Cinzel", serif;
+    font-size: 19px;
+    margin: 15px 0 8px;
+}
+.world-cards .card p{
+    color:#f5f1e6;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 1.5;
+    padding:0 12px;
+}
+.spells{
+    background-color:#06131c;
+    padding:60px 20px;
+    text-align:center;
+}
+.spells h2{
+    color:#f1d58a;
+    font-family:"Cinzel", serif;
+    font-size: 32px;
+    margin-bottom:30px;
+}
+.spell-list{
+    display:flex;
+    justify-content: center;
+    gap:25px;
+    flex-wrap: wrap;
+}
+.spell{
+    width:220px;
+    padding:25px 20px;
+    background-color:#06131c;
+    border:1px solid rgba(241, 213, 138, 0.25);
+    border-radius:10px;
+}
+.spell h3{
+    color:#f1d58a;
+    font-family:"Cinzel", serif ;
+    font-size: 21px;
+    margin-bottom:12px;
+}
+.spell p{
+    color:#f5f1e6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 1.5;
+    margin:0;
+}
+.registration{
+    background-color: #06131c;
+    padding:60px 20px;
+    text-align: center;
+}
+.registration h2{
+    color:#f1d58a;
+    font-family:"Cinzel", serif ;
+    font-size: 32px;
+    margin-bottom:15px;
+}
+.registration > p{
+    color:#f5f1e6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom:30px;
+}
+.registration form{
+    max-width: 600px;
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    text-align:left;
+}
+.registration label{
+    color:#f1d58a;
+    font-family:"Cinzel", serif;
+    font-size:15px;
+    margin-top:8px;
+}
+.registration input, .registration select, .registration textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    background-color: #0b202d;
+    color: #f5f1e6;
+    border: 1px solid rgba(241, 213, 138, 0.3);
+    border-radius: 6px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+.registration button {
+    align-self: center;
+    margin-top: 15px;
+    padding: 12px 30px;
+    background-color: #f1d58a;
+    color: #06131c;
+    border: none;
+    border-radius: 25px;
+    font-family: "Cinzel", serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+@media(max-width:768px){
+    nav{
+        height:auto;
+        flex-direction: column;
+        gap:15px;
+        padding:15px 20px;
+    }
+    .logo img{
+        width:200px;
+    }
+    .nav-links{
+        gap:15px;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    .featured-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width:min(90%, 320px);
+    }
+    .houses-card, .life-cards, .world-cards, .spell-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-content h1, .page-hero-content h1{
+        font-size:38px;
+    }
+    .hero-content p, .page-hero-content p{
+        font-size:17px;
+    }
+    .hero-button{
+        padding:12px 28px;
+        font-size: 15px;
+    }
+}
+.card{
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 8px 25px rgba(241, 213, 138, 0.15);
+}
