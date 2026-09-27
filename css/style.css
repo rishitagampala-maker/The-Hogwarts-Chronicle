@@ -11,17 +11,14 @@ nav{
     top:0;
     z-index: 10;
 }
-
 .logo img{
     width:250px;
     height: auto;
 }   
-
 .nav-links{
     display:flex;
     gap:30px;
 }
-
 .nav-links a{
     color:#f1d58a;
     text-decoration:none;
@@ -29,11 +26,9 @@ nav{
     font-family: Georgia, 'Times New Roman', Times, serif;
     transition: 0.3s;
 }
-
 .nav-links a:hover{
     color: white;
 }
-
 .hero{
     min-height: 80vh;
     background-image: url("../images/hogwarts-hero.jpg");
@@ -487,4 +482,8 @@ footer p {
 .card:hover{
     transform:translateY(-6px);
     box-shadow:0 8px 25px rgba(241, 213, 138, 0.15);
+}
+html, body{
+    margin:0;
+    padding:0;
 }
